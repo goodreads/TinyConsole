@@ -17,4 +17,5 @@ s.social_media_url = 'https://twitter.com/maccosmo'
 s.ios.deployment_target = '11.0'
 
 s.source_files = 'TinyConsole/**/*'
+s.exclude_files = "TinyConsole/**/*.plist"
 end
