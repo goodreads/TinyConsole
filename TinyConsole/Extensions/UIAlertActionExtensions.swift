@@ -38,7 +38,7 @@ internal extension UIAlertAction {
     typealias MailInitiator = UIViewController & MFMailComposeViewControllerDelegate
     
     static func sendMail(on viewController: MailInitiator) -> UIAlertAction {
-        UIAlertAction(title: "Send Email", style: .default) {
+        return UIAlertAction(title: "Send Email", style: .default) {
             (action: UIAlertAction) in
             DispatchQueue.main.async {
                 guard let text = TinyConsole.shared.textView?.text else {
